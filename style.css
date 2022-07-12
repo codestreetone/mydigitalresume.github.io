@@ -1,0 +1,176 @@
+*{margin: 0%; box-sizing: border-box; padding: 0%;}
+/* @font-face{
+    font-family: 'Work Sans', sans-serif;
+    src: url(fonts/static/WorkSans-Regular.ttf);
+
+} */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+.h1{font-size: 2rem; color: rgb(100, 100, 100);}
+.h2_grey{font-size: 1.2rem; color: rgb(100, 100, 100); font-weight: 1000;}
+.h2_black{font-size: 1.2rem; font-weight: 1000; color: rgb(73, 73, 73)}
+.p1{color: rgb(100, 100, 100);}
+/* .head .banner .about .skills .exp .edu .footer{} */
+.container{padding-left: 5%; padding-right: 5%; padding-top: 2%; padding-bottom: 2%;}
+.head{display: flex; padding-bottom: 3%;}
+.title{font-weight: 600; font-size: 2rem; width: 30%;}
+.title a{text-decoration: none; color: rgb(34, 34, 34);}
+.nav{width: 70%;}
+.nav ul{display: flex; justify-content: end; column-gap: 5%; line-height: 2rem;}
+.nav ul li{list-style-type: none;}
+.nav ul li a{text-decoration: none; color: gray;}
+.nav ul li a:hover{color: rgb(34, 34, 34);}
+.banner{width: 100%; height: 80vh; background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)) ,url(images/banner.jpg); background-size: 100% 100%; filter: opacity(92%); text-align: center; padding: 5%;}
+.dp img{width: 158; height: 25vh; border: 5px solid white; padding: 0.2%; }
+.dp_name{color: white; font-size: 3rem; font-weight: 600; padding: 2%;}
+.dp_info{color: white; font-weight: 600;}
+.btn{padding: 3%;}  
+#dw_cv{background-color: rgb(73, 73, 73); border: 2px solid rgb(73, 73, 73); color: white; padding: 2%; border-radius: 7px 7px; font-weight: 600; font-size: 1.1rem;}
+/* .hr_me{background-color: skyblue; color: white; padding: 2%; border: none; border-radius: 7px 7px; font-weight: 600; margin-left: 0.5%; font-size: 1.1rem;} */
+#dw_cv:hover{border: 3px solid whitesmoke;}
+/* .hr_me:hover{background-color: rgb(37, 181, 238);} */
+.about{margin-top: 2%; padding: 4%; display: flex; justify-content: center; column-gap: 5%; box-shadow: 0px 0px 10px gray}
+.about_me{width: 50%;}
+.bio{width: 50%;}
+.sec1{width:30%; float: left;}
+.sec1 ul li{list-style-type: none; padding: 3%;}
+.sec2{width: 60%; float: left; margin-left: 10%;}
+.sec2 ul li{list-style-type: none; padding: 2%;}
+.skills {margin-top: 2%; padding: 4%; box-shadow: 0px 0px 10px gray;}
+.skills ul{list-style-type: none;}
+.skills ul li{border: 1px solid grey; border-radius: 10px 10px; margin-top: 1%; text-align: left;}
+.html{width: 95%; background-color: rgb(73, 73, 73); border-radius: 10px 10px; color: white; font-weight: 600; padding: 0.5%;}
+.css{width: 90%; background-color: rgb(73, 73, 73); border-radius: 10px 10px; color: white; font-weight: 600; padding: 0.5%;}
+.js{width: 70%; background-color: rgb(73, 73, 73); border-radius: 10px 10px; color: white; font-weight: 600; padding: 0.5%;}
+.bp{width: 65%; background-color: rgb(73, 73, 73); border-radius: 10px 10px; color: white; font-weight: 600; padding: 0.5%;}
+.exp{margin-top: 2%; padding: 4%; box-shadow: 0px 0px 10px gray;}
+.exp ul{padding: 2%;}
+.exp ul li{list-style-type: circle; margin-top: 2%;}
+.exp_nit{margin-top: 2%;}
+.exp_des{font-size: 16px; margin-top: 0.5%;}
+.edu{margin-top: 2%; padding: 4%; box-shadow: 0px 0px 10px gray;}
+.edu ul{padding: 2%;}
+.edu ul li{list-style-type: circle; margin-top: 2%;}
+.footer{text-align: center; padding: 4%;}
+#ab{transition: 0.5s;}
+
+@media print {
+    .h1{color: black; font-size: 20px; font-weight: 600;}
+    .h2_black{color: black; font-weight: 400; font-size: 14px;}
+    .h2_grey{color: black; font-weight: 400; font-size: 14px;}
+    .p1{color: black; font-size: 12px;}
+    
+    .container {
+            padding-top: 0%;
+            padding-bottom: 0%;
+        }
+    .title{font-weight: 800; font-size: 2rem; width: 100%;}
+    .nav{display: none;}
+    .banner{display: none;}
+    .about{
+        padding: 0%; 
+        margin-top: 2%;
+        box-shadow: none;
+        border-bottom: 0.5px solid;
+        padding-bottom: 3%;
+        column-gap: 10%;
+        justify-content: left;
+    }
+    .about_me{width: 40%;}
+    .about_me p{font-size: 12px;}
+    .bio{width: 50%;}
+    .sec1{margin-top: 2%; font-size: 14px;}
+    .sec1 i {
+        display: none;
+    }
+    .sec2{margin-top: 2%; font-size: 12px;}
+    .skills{
+        padding: 0%; 
+        margin-top: 2%;
+        box-shadow: none;
+        border-bottom: 0.5px solid;
+        padding-bottom: 3%;
+    }
+    .skills ul{list-style-type: circle; padding-left: 3%;}
+    .skills ul li{margin-top: 1%; text-align: left; border: none; font-size: 12px;}
+    
+    .html{border-radius: 10px 10px; font-weight: 600; padding: 0.5%; color: black; font-weight: 400;}
+    .css{border-radius: 10px 10px; font-weight: 600; padding: 0.5%; color: black; font-weight: 400;}
+    .js{border-radius: 10px 10px; font-weight: 600; padding: 0.5%; color: black; font-weight: 400;}
+    .bp{border-radius: 10px 10px; font-weight: 600; padding: 0.5%; color: black; font-weight: 400;}
+    .exp{padding: 0%;
+        margin-top: 2%;
+        box-shadow: none;
+        border-bottom: 0.5px solid;
+        padding-bottom: 3%;}
+    .exp ul{padding-left: 3%;}
+    .exp ul li{list-style-type: circle; margin-top: 2%; font-size: 12px;}
+    .exp_nit{margin-top: 2%;}
+    .exp_des{font-size: 12px; margin-top: 0.5%;}
+    .edu{padding: 0%;
+        margin-top: 2%;
+        box-shadow: none;
+        padding-bottom: 3%;}
+    .edu ul{padding-left: 3%;}
+    .edu ul li{list-style-type: circle; margin-top: 2%; font-size: 12px;}
+    .footer{text-align: right; padding: 0%;}
+}
+
+@media screen and (max-width: 600px) {
+.container{padding: 2%;}
+.h1 {
+    font-size: 1.5rem;
+}
+
+.h2_grey {
+    font-size: 1rem;
+}
+
+.h2_black {
+    font-size: 1rem;
+}
+.head {
+    display: block;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+.nav {
+    width: 100%;
+}
+.nav ul {
+    justify-content: center;
+    column-gap: 10%;
+}
+.dp_name {
+    font-size: 2rem;
+}
+.about {
+    display: block;
+}
+.about_me {
+    width: 100%;
+}
+
+.bio {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+}
+.bio > .h1{display: none;}
+.sec1{float: none;}
+.sec2{float: none;}
+.html{padding: 1%;}
+.css{padding: 1%;}
+.js{padding: 1%;}
+.bp{padding: 1%;}
+ul li{margin-left: 3%;}
+.exp_nit{margin-top: 5%;}
+}
